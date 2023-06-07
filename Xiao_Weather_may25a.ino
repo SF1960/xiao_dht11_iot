@@ -21,9 +21,7 @@
 
 #include "thingProperties.h"
 #include "DHTesp.h"                                // Click here to get the library: http://librarymanager/All#DHTesp
-#include <SerLCD.h>                                // Click here to get the library: http://librarymanager/All#SparkFun_SerLCD
 
-//SerLCD lcd;                                        // Initialize the library with default I2C address 0x72
 DHTesp dht;                                        // Initialize the sensor
 
 #define dhtPin A2                                  // pin for DHT
@@ -40,12 +38,6 @@ bool getTemperature() {
   // Check if any reads failed and exit early (to try again).
   if (dht.getStatus() != 0) {
     Serial.println("DHT11 error status: " + String(dht.getStatusString()));
-
-    //lcd.clear();
-    //lcd.setCursor(0,0);
-    //lcd.print("DHT11 error:");
-    //lcd.setCursor(0,1);
-    //lcd.print(String(dht.getStatusString()));
 
     delay(delay_time);
 
@@ -103,14 +95,7 @@ bool getTemperature() {
   xiao_19_depoint = dewpoint;
   xiao_19_heatindex = heatindex;
   
-  // show on display
-  //lcd.clear();
-  //lcd.setCursor(2,0);
-  //lcd.print("TEMP: " + String(xiao_19_temperature) + "C");
-  //lcd.setCursor(2,1);
-  //lcd.print("HUM : " + String(xiao_19_humidity) + "%");
-  
-	return true;
+  return true;
 
 }
 
@@ -138,29 +123,11 @@ void setup() {
   setDebugMessageLevel(2);
   ArduinoCloud.printDebugInfo();
 
- Serial.println("DHT ESP32 example with tasks");
-
-  Wire.begin();                 // to communicate with the DHT11
-  //lcd.begin(Wire);              // Set up the LCD for I2C communication
-  //lcd.setBacklight(0,0,255);    // blue background colour
-
-  // Print a messages to the LCD.
-  //lcd.setCursor(3,0);
-  //lcd.print("Welcome !");
-  //lcd.setCursor(2,1);
-  //lcd.print("Arduino IOT");
-
-  delay(delay_time);
+  Serial.println("DHT ESP32 example with tasks");
 
   Serial.println("Ready");
   Serial.print("IP address: ");
   Serial.println(WiFi.localIP());
-
-  //lcd.clear();
-  //lcd.setCursor(0,0);
-  //lcd.print("Connected:");
-  //lcd.setCursor(0,1);
-  //lcd.print(WiFi.localIP());
 
   delay(delay_time);
 
@@ -171,29 +138,9 @@ void loop() {
   getTemperature();           // get data from DHT11
 
   ArduinoCloud.update();
-
-  delay(delay_time);
-
-  // Temperature data is displayed from getTemperature() function
-
-  // display data
-  //lcd.clear();
-  //lcd.setCursor(2,0);
-  //lcd.print("HIDX: " + String(xiao_19_heatindex) + "C");
-  //lcd.setCursor(2,1);
-  //lcd.print("DEWP: " + String(xiao_19_depoint) + "C");
   
   delay(delay_time);
   
-  //lcd.clear();
-  //lcd.setCursor(1,0);
-  //lcd.print("Comfort Status");
-  //lcd.setCursor(0,1);
-  //lcd.print(xiao_19_comfort);
-
-  
-  delay(delay_time);
-
 }
 
 
