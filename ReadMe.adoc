@@ -46,7 +46,7 @@ Upload the code contained in this sketch on to your board
 This project is released under a {Public Open} License.
 
 === Contributing
-To contribute to this project please contact: steve.f.fuller@gmail.com
+To contribute to this project please contact: steve.g.fuller@gmail.com
 
 === BOM
 Add the bill of the materials you need for this project.
