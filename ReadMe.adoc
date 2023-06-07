@@ -14,15 +14,16 @@ Read temperature and humidity and upload to the Arduino IOT
 2. Add the variables to a Thing associated with your device
 
 === IOT variables
+Variables for Arduino IOT you need for this project.
 
-....
- Arduino IOT variables              => 
-  ├── String xiao_19_comfort;       => text variable to hold comfort information
-  ├── float xiao_19_depoint;        => float variable dewpoint (spelt wrong)
-  ├── float xiao_19_heatindex;      => heatindex calculated by the DHT11
-  └── float xiao_19_humidity;       => humidity read from the DHT11
-  └── float xiao_19_temperature;    => temperature read from the DHT11
-....
+|===
+| Type   | Variable name       | Description 
+| String | xiao_19_comfort;    | text variable to hold comfort information
+| float  | xiao_19_depoint;    | float variable dewpoint (spelt wrong)  
+| float  | xiao_19_heatindex;  | heatindex calculated by the DHT11
+| float  | xiao_19_humidity;   | humidity read from the DHT11
+| float  | xiao_19_temperature;| temperature read from the DHT11
+|===
 
 3. Change the code in thingProperties.h to include your unique ID const char DEVICE_LOGIN_NAME[]  = "a9ea85e0-a199-4816-aca4-a77a6ac14ddf" 
 4. Add your internet details on the Secrets.h
