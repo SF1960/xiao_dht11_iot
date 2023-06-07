@@ -6,16 +6,23 @@
 
 = Project: {Project}
 
-Describe your project
+Read temperature and humidity and upload to the Arduino IOT
 
 == Step 1: Installation
-Please describe the steps to install this project.
 
-For example:
+1. Set up your device on Ardiuno
+2. Add the variables to a Thing associated with your device
 
-1. Open this file
-2. Edit as you like
-3. Release to the World!
+String xiao_19_comfort;
+float xiao_19_depoint;
+float xiao_19_heatindex;
+float xiao_19_humidity;
+float xiao_19_temperature;
+
+3. Change the code in thingProperties.h to include your unique ID const char DEVICE_LOGIN_NAME[]  = "a9ea85e0-a199-4816-aca4-a77a6ac14ddf" 
+4. Add your internet details on the Secrets.h
+5. load to your device
+6. Create a dashboard to show the outputs
 
 == Step 2: Assemble the circuit
 
