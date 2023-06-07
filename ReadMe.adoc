@@ -52,10 +52,10 @@ To contribute to this project please contact: steve.f.fuller@gmail.com
 Add the bill of the materials you need for this project.
 
 |===
-| ID | Part name      | Part number | Quantity
-| R1 | 10k Resistor   | 1234-abcd   | 1    
-| L1 | DHT11          | 2345-asdf   | 1      
-| A1 | Xiao ESP32C3   | ABX00066    | 1        
+| ID | Part name      | Part number | Quantity | website
+| R1 | 10k Resistor   | 1234-abcd   | 1        | https://www.amazon.co.uk/10k-resistor/s?k=10k+resistor
+| L1 | DHT11          | 2345-asdf   | 1        | https://learn.adafruit.com/dht/overview  
+| A1 | Xiao ESP32C3   | ABX00066    | 1        | https://www.seeedstudio.com/Seeed-XIAO-ESP32C3-p-5431.html  
 |===
 
 
