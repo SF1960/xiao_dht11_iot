@@ -13,11 +13,16 @@ Read temperature and humidity and upload to the Arduino IOT
 1. Set up your device on Ardiuno
 2. Add the variables to a Thing associated with your device
 
-String xiao_19_comfort;
-float xiao_19_depoint;
-float xiao_19_heatindex;
-float xiao_19_humidity;
-float xiao_19_temperature;
+=== IOT variables
+
+....
+ Arduino IOT variables              => 
+  ├── String xiao_19_comfort;       => text variable to hold comfort information
+  ├── float xiao_19_depoint;        => float variable dewpoint (spelt wrong)
+  ├── float xiao_19_heatindex;      => heatindex calculated by the DHT11
+  └── float xiao_19_humidity;       => humidity read from the DHT11
+  └── float xiao_19_temperature;    => temperature read from the DHT11
+....
 
 3. Change the code in thingProperties.h to include your unique ID const char DEVICE_LOGIN_NAME[]  = "a9ea85e0-a199-4816-aca4-a77a6ac14ddf" 
 4. Add your internet details on the Secrets.h
