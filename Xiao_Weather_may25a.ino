@@ -28,6 +28,8 @@
 #include <Wire.h>                                 // for connecting to the DHT11: https://reference.arduino.cc/reference/en/language/functions/communication/wire/
 #include <Adafruit_GFX.h>                         // graphics library for the OLED: https://github.com/adafruit/Adafruit-GFX-Library
 #include <Adafruit_SSD1306.h>                     // OLED library: https://github.com/adafruit/Adafruit_SSD1306
+#include <thermometer.h>                          // icon files
+#include <humidity.h>
 
 // definitions
 
