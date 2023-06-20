@@ -4,7 +4,7 @@
 :Revision: version#
 :License: Public Domain
 
-= Project: {Project}
+= Project: {Xiao_Weather}
 
 Read temperature and humidity and upload to the Arduino IOT
 
@@ -43,9 +43,9 @@ Upload the code contained in this sketch on to your board
 ....
  Xiao_Weather_may25a                => Arduino sketch folder
   ├── Xiao_Weather_may25a.ino       => main Arduino file
-  ├── thingProperties.h             => Arduino library file
-  ├── arduino_secrets.h             => data about internet and device
-  └── Xiao ESP32 DHT11.pdf          => schematic 
+  ├── thingProperties.h             => Arduino IOT library components
+  ├── Secret                        => WiFi and Device ID information
+  └── ReadMe.adoc                   => this file
 ....
 
 === License
@@ -55,13 +55,13 @@ This project is released under a {Public Open} License.
 To contribute to this project please contact: steve.g.fuller@gmail.com
 
 === BOM
-Add the bill of the materials you need for this project.
 
 |===
-| ID | Part name      | Part number | Quantity | website
-| R1 | 10k Resistor   | 1234-abcd   | 1        | https://www.amazon.co.uk/10k-resistor/s?k=10k+resistor
-| L1 | DHT11          | 2345-asdf   | 1        | https://learn.adafruit.com/dht/overview  
-| A1 | Xiao ESP32C3   | ABX00066    | 1        | https://www.seeedstudio.com/Seeed-XIAO-ESP32C3-p-5431.html  
+| ID | Part name      | Part number            | Quantity | Website 
+| U1 | Xiao ESP32C3   | SEEED-113991054        |    1     | https://shop.pimoroni.com/products/seeed-studio-xiao-esp32c3?variant=40110502215763   
+| U2 | OLED Display   | GeeekPi 2pcs 0.96 Inch |    1     | https://www.amazon.co.uk/GeeekPi-Display-Du-pont-Raspberry-Arduino/dp/B0BB1T23LF?source=ps-sl-shoppingads-lpcontext&ref_=fplfs&psc=1&smid=A187Y4UVM6ZA0X
+| U3 | DHT11 Sensor   | DHT11                  |    1     | https://learn.adafruit.com/dht/overview
+| R1 | 10k Resistor   |                        |    1     |     
 |===
 
 
