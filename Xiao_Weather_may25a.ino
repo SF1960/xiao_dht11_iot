@@ -40,7 +40,7 @@
 #define LARGE 3
 #define dhtPin A2                                 // pin for DHT
 #define BAUD 9600                                 // serial monitor BAUD rate
-#define THERM_WIDTH 26
+#define THERM_WIDTH 26                            // size of thermometer icon
 #define THERM_HEIGHT 40
 
 // Declaration for an SSD1306 display connected to I2C (SDA, SCL pins)
@@ -198,8 +198,8 @@ void setup() {
   displayPrint(SMALL, 10, 57, "sgfpcb@gmail.com");
   // display bitmap icon
   display.drawBitmap(
-    (display.width()  - LOGO_WIDTH ) / 2,
-    (display.height() - LOGO_HEIGHT) / 2,
+    (display.width()  - THERM_WIDTH ) / 2,
+    (display.height() - THERM_HEIGHT) / 2,
     thermometer, THERM_WIDTH, THERM_HEIGHT, 1);
   display.display();
   delay(delay_time);delay(delay_time);
