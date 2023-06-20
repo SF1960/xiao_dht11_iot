@@ -32,7 +32,7 @@ Variables for Arduino IOT you need for this project.
 
 == Step 2: Assemble the circuit
 
-Assemble the circuit following the diagram layout.png attached to the sketch
+Assemble the circuit following the diagram in the PDF attached to the sketch
 
 == Step 3: Load the code
 
