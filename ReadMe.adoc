@@ -26,9 +26,9 @@ Variables for Arduino IOT you need for this project.
 |===
 
 3. Change the code in thingProperties.h to include your unique ID const char DEVICE_LOGIN_NAME[]  = "a9ea85e0-a199-4816-aca4-a77a6ac14ddf" 
-4. Add your internet details on the Secrets.h
-5. load to your device
-6. Create a dashboard to show the outputs
+4. Add your internet details and device ID on the Secrets.h
+5. Load to your device using Arduino Web Editor
+6. Create an Arduino dashboard to show the outputs
 
 == Step 2: Assemble the circuit
 
